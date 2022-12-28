@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JO-KEN-PO</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container__principal">
+        <h1 class="title">JO-KEN-PO</h1>
+        
+        <div id="placar">
+
+            <div id="jogador">
+              <h2 id="jogador-nome">&nbsp;</h2>
+              <span id="jogador-pontos">0</span>
+              <ul id="jogador-escolha">
+                <li><a id="jogador-escolha-1"><img src="./assets/img/pedra.png"></a></li>
+                <li><a id="jogador-escolha-2"><img src="./assets/img/papel.png"></a></li>
+                <li><a id="jogador-escolha-3"><img src="./assets/img/tesoura.png"></a></li>
+              </ul>
+
+            </div>
+
+            <div id="versus">versus</div>
+
+            <div id="bot">
+                <h2 id="name__bot">Nickelback</h2>
+                <span id="bot-pontos">0</span>
+
+                <ul id="bot-escolha">
+                    <li><a id="bot-escolha-1"><img src="./assets/img/pedra.png"></a></li>
+                    <li><a id="bot-escolha-2"><img src="./assets/img/papel.png"></a></li>
+                    <li><a id="bot-escolha-3"><img src="./assets/img/tesoura.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mensagem">abc</div>
+        <br><br><br><br>
+        <div id="buttons">
+            <button id="button">Reset Game</button>
+            <br><br>
+            <button id="button-2">Game Over</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

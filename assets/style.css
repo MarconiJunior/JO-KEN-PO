@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1616;
+}
+
+
+.title {
+    text-indent: 20px;
+    margin: 30px;
+    text-align: center;
+    font-size: 150px;
+    font-weight: bold;
+    color: transparent;
+    background-color:#c0c0c0;
+    background-image:
+    radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+    background-size: 100px 50px;
+    -webkit-background-clip: text; 
+}
+
+#placar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jogador, #bot {
+    position: relative;
+    flex-grow: 1;
+    border-radius: 5px;
+    width: 200px;
+    padding: 20px;
+    color: #fff;
+}
+
+#versus {
+    width: 200px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    color: #fff;
+}
+
+#jogador-nome, #name__bot {
+    margin: 0;
+    padding: 0;
+}
+
+#jogador-nome {
+    text-align: left;
+}
+
+#name__bot {
+    text-align: right;
+}
+
+#jogador-pontos, #bot-pontos {
+    position: absolute;
+    top: .5rem;
+    font-size: 40px;
+}
+
+#jogador-pontos {
+    right: 100px;
+}
+
+#computador-pontos {
+    left: 20px;
+}
+
+li {
+    display: inline-block;
+    padding: 4.565rem;
+    vertical-align: middle;
+    align-items: center;
+}
+
+#jogador-escolha a, #bot-escolha a {
+    opacity: .2;
+    padding: 5px;
+}
+
+#jogador-escolha a:hover, #jogador-escolha a.selected, #bot-escolha a.selected {
+    opacity: 1;
+}
+
+#jogador-escolha img, #computador-escolha img {
+    max-width: 80px;
+}
+
+img {
+    width: 80px;
+    cursor: pointer;
+}
+
+#mensagem {
+    border: 1px solid #e28e8e;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#buttons {
+    width: 100px;       
+    margin: 0 auto;
+}
+
+button {
+    border: 1px solid #e28e8e;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: #FFF;
+    padding: .625rem;
+    cursor: pointer;
+    width: 91px;
+}

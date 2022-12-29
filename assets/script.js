@@ -106,6 +106,8 @@ document.getElementById('button').addEventListener('click', () => {
         document.getElementById('jogador-pontos').innerHTML = '0'
         document.getElementById('bot-pontos').innerHTML = '0'
         text(`Welcome, ${jogadorNome}, are you ready? Choose an option above!`)
+        jogadorPontos = 0
+        botPontos = 0
     } 
 })
 
@@ -119,11 +121,17 @@ document.getElementById('button-2').addEventListener('click', () => {
     if (gameOver) {
         if (jogadorPontos > botPontos) {
             alert(`Congratulations ${jogadorNome}! You won the game`)
+            showConfet('placar')
         } else if (jogadorPontos < botPontos) {
             alert(`Congratulations Nickelpreto! You won the game`)
+            showConfet('placar')
         } else {
             alert('Draw!')
         }
-        showConfet('placar')
+        document.getElementById('jogador-pontos').innerHTML = '0'
+        document.getElementById('bot-pontos').innerHTML = '0'
+        text(`Welcome, ${jogadorNome}, are you ready? Choose an option above!`)
+        jogadorPontos = 0
+        botPontos = 0
     } 
 })
